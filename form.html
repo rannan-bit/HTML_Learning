@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styling cdn -->
 </head>
 <body>
+    <h1><i class="fa-solid fa-user fa-beat"></i>Registration Form</h1>
+    
     <!-- form -->
     <form action="">
         <label for="uname">Username</label>
@@ -27,7 +31,60 @@
         <label for="">DOB</label>
         <input type="date"><br><br>
         <!-- date type show a date picker -->
-        
+
+        <label for="">course:</label>
+        <input name="course" type="radio">
+        <label for="">CA</label>
+        <input name="course" type="radio">
+        <label for="">ACCA</label>
+        <input name="course" type="radio">
+        <label for="">CMA</label>
+        <!-- name attribute of radio buttons that are grouped set same -->
+         <br><br>
+
+        <label for="">Languages known:</label>
+
+        <input type="checkbox">
+        <label for="">English</label>
+        <input type="checkbox">
+        <label for="">Malayalam</label>
+        <input type="checkbox">
+        <label for="">Hindi</label>
+        <input type="checkbox">
+        <label for="">Tamil</label>
+        <br><br>
+
+        <label for="">District:</label>
+        <select name="" id="">
+            <option value="">Calicut</option>
+            <option value="">Malappuram</option>
+            <option value="">Kannur</option>
+            <option value="">Trissur</option>
+
+  
+        </select>
+        <!-- select tag used for large number of lists -->
+        <!-- options in the lists are placed in option tag -->
+         <br><br>
+
+         <label for="">Upload your photo:</label>
+         <input type="file">
+         <!-- file type allow to upload file from your device -->
+          <br>
+
+          <button>Register</button>
+          <br>
+          <input value="reset" type="button">
+          <!-- can set button by using button tag or input tag, If you are using input tag content of button put in value attribute -->
+
+
+          <input type="color">
+          <!-- for choosing colour -->
+
+          <br>
+          <input type="range">
+          <!-- for choosing range -->
+
         
     </form>
 </body>
