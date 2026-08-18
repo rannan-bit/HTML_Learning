@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(42, 42, 68);
+    padding: 15px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+header img{
+    height: 50px;
+    width: auto;
+    z-index: 10;
+}
+header input{
+    display: none;
+    /* to hide the checkbox */
+}
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+header .menu-icon{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    display: none;
+}
+header .close-icon{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    display: none;
+}
+h1{
+    text-align: center;
+    color: red;
+    margin: 20px 0px;
+    margin-top: 100px;
+
+}
+p{
+    padding: 20px 40px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    height: 250px;
+    width: 250px;
+
+}
+.col img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:768px){
+    .col{
+        margin-top: 20px;
+    }
+}
+@media(max-width:460px){
+    p{
+        font-size: 22px;
+    }
+    header .menu-icon{
+        display: flex;
+    }
+    nav{
+        position: absolute;
+        top: 50px;
+        background-color: antiquewhite;
+        width: 100%;
+        /* border-radius: 10px; */
+        left: 0px;
+        display: none;
+    }
+    nav a{
+        display: block;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    #check:checked~nav{
+        display: block;
+        /* if check box is checked nav bar is shown in block */
+    }
+    #check:checked~label .menu-icon{
+        display: none;
+    }
+    #check:checked~label .close-icon{
+        display: flex;
+    }
+    
+   
+}
+
+
+/* 480px for small/mobile,768px for medium devices , 992px for large, 1280 for xlg*/
